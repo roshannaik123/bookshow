@@ -1,0 +1,53 @@
+.show-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  background: linear-gradient(to bottom, #f4f4f4, #e0e0e0); 
+  margin-top: 100px;
+  font-family: 'Arial', sans-serif;
+}
+
+.show-card {
+  position: relative; /* Make the container relative for absolute positioning */
+  background-color: black;
+  border: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.show-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.show-card h2 {
+  color: white;
+}
+
+.show-card p {
+  line-height: 1.6;
+  
+  color: grey;
+}
+
+.show-card a {
+  position: absolute; 
+  bottom: 10px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  display: block;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.show-card a:hover {
+  background-color: #0056b3;
+}
